@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/signUpTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/sign_up_title"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="30dp"/>
+
+    <TextView
+        android:id="@+id/signUpEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/signUpTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/signUpEmailEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/signUpEmailTextView"
+        app:layout_constraintBaseline_toBaselineOf="@id/signUpEmailTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:hint="@string/login_email_hint"/>
+
+    <TextView
+        android:id="@+id/signUpPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/signUpEmailEditText"
+        app:layout_constraintStart_toStartOf="@id/signUpEmailTextView"
+        app:layout_constraintEnd_toEndOf="@id/signUpEmailTextView"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/signUpPasswordEditTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/signUpEmailEditText"
+        app:layout_constraintBaseline_toBaselineOf="@id/signUpPasswordTextView"
+        app:layout_constraintEnd_toEndOf="@id/signUpEmailEditText"
+        android:hint="@string/login_pw_hint"/>
+
+    <TextView
+        android:id="@+id/signUpNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/signUpPasswordEditTextView"
+        app:layout_constraintStart_toStartOf="@id/signUpEmailTextView"
+        app:layout_constraintEnd_toEndOf="@id/signUpEmailTextView"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/signUpNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/signUpEmailEditText"
+        app:layout_constraintBaseline_toBaselineOf="@id/signUpNameTextView"
+        app:layout_constraintEnd_toEndOf="@id/signUpEmailEditText"
+        android:hint="@string/login_name_hint"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/signUpNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:text="@string/sign_up_button"
+        android:backgroundTint="@color/main_color"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
