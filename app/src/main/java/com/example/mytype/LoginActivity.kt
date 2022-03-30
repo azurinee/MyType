@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
             val email = binding.emailEditText
             val password = binding.passwordEditText
 
-            auth.createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
+            auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful)
                         finish()
@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun initSignUpButton() {
-        binding.signUpButton.setOnClickListener {
+        binding.signUpPageButton.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
     }
