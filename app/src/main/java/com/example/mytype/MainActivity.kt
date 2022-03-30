@@ -3,10 +3,9 @@ package com.example.mytype
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.FirebaseApp
+import com.example.mytype.setType.SettingTypeActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +23,10 @@ class MainActivity : AppCompatActivity() {
 
         if (auth.currentUser == null) {
             startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        } else {
+            startActivity(Intent(this, SettingTypeActivity::class.java))
+            finish()
         }
     }
 }

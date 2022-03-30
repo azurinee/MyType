@@ -10,4 +10,9 @@
 
     <string name="sign_up_title">회원가입</string>
     <string name="login_name_hint">이름을 입력해 주세요</string>
+    <string name="next_button">다음</string>
+    <string name="preview_button">이전</string>
+    <string name="profile_nickname">닉네임을 입력하세요</string>
+    <string name="profile_sex">성별</string>
+    <string name="profile_age">나이</string>
 </resources>
