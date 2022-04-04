@@ -35,7 +35,7 @@ class SettingTypeActivity : AppCompatActivity() {
             if (fragmentNum == 1) {
                 val fragment = SetTypeFragment()
                 replaceFragment(fragment)
-                binding.typeFragmentKey.text = getString(R.string.preview_button)
+                binding.typeFragmentKey.text = getString(R.string.complete_button)
                 fragmentNum++
             } else {
                 val fragment = SetProfileFragment()
