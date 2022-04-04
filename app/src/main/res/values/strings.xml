@@ -19,4 +19,7 @@
     <string name="male">남성</string>
     <string name="type_title">나의 타입을 골라주세요</string>
     <string name="type_mbti">MBTI</string>
+    <string name="menu_home">홈</string>
+    <string name="menu_chatting">채팅</string>
+    <string name="menu_my_page">마이페이지</string>
 </resources>

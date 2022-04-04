@@ -49,7 +49,7 @@ class SetProfileFragment : Fragment() {
         val userId = auth.currentUser?.uid.orEmpty()
         val profile = mutableMapOf<String, Any>()
         val currentUserDB = userDB.child(userId)
-        profile["nickName"] = binding?.nickNameEditText?.text.toString()
+        profile["nickName"] = binding.nickNameEditText.text.toString()
         profile["sex"] = userSex
         currentUserDB.updateChildren(profile)
     }

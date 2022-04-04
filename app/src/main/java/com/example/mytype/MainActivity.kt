@@ -10,6 +10,7 @@ import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
+    private var num: Int = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,10 +24,9 @@ class MainActivity : AppCompatActivity() {
 
         if (auth.currentUser == null) {
             startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-        } else {
+        } else if (num ==1) {
             startActivity(Intent(this, SettingTypeActivity::class.java))
-            finish()
+            num++
         }
     }
 }

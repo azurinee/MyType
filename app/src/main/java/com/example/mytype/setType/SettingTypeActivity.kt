@@ -38,10 +38,7 @@ class SettingTypeActivity : AppCompatActivity() {
                 binding.typeFragmentKey.text = getString(R.string.complete_button)
                 fragmentNum++
             } else {
-                val fragment = SetProfileFragment()
-                replaceFragment(fragment)
-                binding.typeFragmentKey.text = getString(R.string.next_button)
-                fragmentNum--
+                finish()
             }
         }
     }
